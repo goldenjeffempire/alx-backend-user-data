@@ -145,6 +145,16 @@ This project contains tasks for learning to authenticate a user through session 
   + Update [api/v1/app.py](api/v1/app.py) to instantiate `auth` with `SessionDBAuth` if the environment variable `AUTH_TYPE` is equal to `session_db_auth`.
 
 
+
+
+## RESOURCES
+
++ [x] [REST API Authentication Mechanisms - Only the session auth part](https://intranet.alxswe.com/rltoken/oofk0VhuS0ZFZTNTVrQeaQ)
++ [x] [HTTP Cookies](https://intranet.alxswe.com/rltoken/peLV8xuJ4PDJMOVFqk-d2g)
++ [x] [Flask](https://intranet.alxswe.com/rltoken/AI1tFR5XriGfR8Tz7YTYQA)
++ [x] [Flask Cookies](https://intranet.alxswe.com/rltoken/QYfI5oW6OHUmHDzwKV1Qsw) 
+
+
 ## :pencil: **Author**
 ### :man: Jeffery Emuuodafevware
 - [Github](https://github.com/goldenjeffempire)
