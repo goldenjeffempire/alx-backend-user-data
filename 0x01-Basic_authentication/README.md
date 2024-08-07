@@ -160,71 +160,14 @@ This project contains tasks for learning to authenticate a user using the Basic 
       + `/api/v1/status` will return `False`.
       + `/api/v1/stats` will return `False`.
 
-Repo:
 
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/app.py, api/v1/views/index.py
-￼ Done? ￼Check your code ￼Get a sandbox ￼QA Review
-2. Error handler: Forbidden
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-What the HTTP status code for a request where the user is authenticate but not allowed to access to a resource? 403 of course!
 
-Edit api/v1/app.py:
-
-Add a new error handler for this status code, the response must be:
-a JSON: {"error": "Forbidden"}
-status code 403
-you must use jsonify from Flask
-For testing this new error handler, add a new endpoint in api/v1/views/index.py:
-
-Route: GET /api/v1/forbidden
-This endpoint must raise a 403 error by using abort - Custom Error Pages
-By calling abort(403), the error handler for 403 will be executed.
-
-In the first terminal:
-
-bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-....
-In a second terminal:
-
-bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden"
-{
-  "error": "Forbidden"
-}
-bob@dylan:~$
-bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden" -vvv
-*   Trying 0.0.0.0...
-* TCP_NODELAY set
-* Connected to 0.0.0.0 (127.0.0.1) port 5000 (#0)
-> GET /api/v1/forbidden HTTP/1.1
-> Host: 0.0.0.0:5000
-> User-Agent: curl/7.54.0
-> Accept: */*
-> 
-* HTTP 1.0, assume close after body
-< HTTP/1.0 403 FORBIDDEN
-< Content-Type: application/json
-< Content-Length: 27
-< Server: Werkzeug/0.12.1 Python/3.4.3
-< Date: Sun, 24 Sep 2017 22:54:22 GMT
-< 
-{
-  "error": "Forbidden"
-}
-* Closing connection 0
-bob@dylan:~$
-Repo:
-
-GitHub repository: alx-backend-user-data
-Directory: 0x01-Basic_authentication
-File: api/v1/app.py, api/v1/views/index.py
-￼ Done? ￼Check your code ￼Get a sandbox ￼QA Review
-3. Auth class
-mandatory
-
+## RESOURCES
++ [x] [REST API Authentication Mechanisms](https://intranet.alxswe.com/rltoken/ssg5umgsMk5jKM8WRHk2Ug)
++ [x] [Base64 in Python](https://intranet.alxswe.com/rltoken/RpaPRyKx1rdHgRSUyuPfeg)
++ [x] [HTTP header Authorization](https://intranet.alxswe.com/rltoken/WlARq8tQPUGQq5VphLKM4w)
++ [x] [Flask](https://intranet.alxswe.com/rltoken/HG5WXgSja5kMa29fbMd9Aw)
++ [x] [Base64-concept](https://intranet.alxswe.com/rltoken/br6Rp4iMaOce6EAC-JQnOw) 
 
 ## :pencil: **Author**
 ### :man: Jeffery Emuuodafevware
